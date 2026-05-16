@@ -1,0 +1,79 @@
+/*universal selector (*) applies styles to all elements*/
+*{
+	/*makes width and height include padding + border*/
+	/*very useful for proper layout control*/
+	box-sizing: border-box;
+	/*removes default margin and padding from all elements for consistent styling across browsers*/
+	margin: 0;
+	padding: 0;
+}
+/*body styles for the entire application, font-family -> Sets font style for whole website, bg -> Sets background color black, color -> Sets text color white,*/
+body{
+	font-family: Arial, sans-serif;
+	background-color: #111;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+/*navbar styles, background -> dark gray, display flex for horizontal layout, align-items center to vertically center items, gap for spacing between items, padding for spacing inside the navbar*/
+.navbar{
+	background: #222;
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+	padding: 1rem 2rem;
+}
+/*navbar links styles, color white, no underline for links*/
+.navbar a{
+	color: #fff;
+	text-decoration: none;
+}
+/*logo styles, color white*/
+.logo{
+	color: #fff;
+}
+/*home page styles, padding for spacing around content*/
+.home form{
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+}
+/*search input styles, padding for spacing inside the input field*/
+.searchInput{
+	padding: 10px;
+}
+/*search button styles, padding for spacing inside the button, background color gray, color white, no border, cursor pointer for hover effect*/
+.searchButton{
+	padding: 10px 20px;
+	background-color: rgb(179, 175, 175);
+	color: #1e1d1d;
+	border: none;
+	cursor: pointer;
+}
+/*movie list styles, display flex for horizontal layout, flex-wrap to allow wrapping to next line, justify-content center to center the movies, gap for spacing between movie cards*/
+.movie-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+/*movie card styles, background dark gray, padding for spacing inside the card, border-radius for rounded corners, width for fixed size, text-align center to center text inside the card*/
+.movie-card {
+	background: #222;
+	padding: 1rem;
+	border-radius: 8px;
+	width: 200px;
+	text-align: center;
+}
+/*movie card image styles, width 100% to make the image fill the card width*/
+.movie-card img {
+	width: 100%;
+}
+/*movie card title styles, margin for spacing around the title*/
+.movie-card h3 {
+	margin: 0.5rem 0;
+}
+/*movie card link styles, color white for the link*/
+.movie-card a {
+	color: #fff;
+}

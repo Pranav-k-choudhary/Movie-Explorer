@@ -1,0 +1,21 @@
+/*Navbar component is responsible for rendering the navigation bar of the application, it includes a logo and a link to the home page, it uses the Link component from react-router-dom to enable client-side routing without refreshing the entire page, providing a smooth and seamless user experience in a single-page application. The Navbar component is typically displayed at the top of the application and allows users to easily navigate back to the home page from any other page within the application.*/
+import { Link } from "react-router-dom"
+
+/*Navbar component is responsible for rendering the navigation bar of the application, it includes a logo and a link to the home page, it uses the Link component from react-router-dom to enable client-side routing without refreshing the entire page, providing a smooth and seamless user experience in a single-page application. The Navbar component is typically displayed at the top of the application and allows users to easily navigate back to the home page from any other page within the application.*/
+function Navbar(){
+
+    /*the return statement renders the JSX for the Navbar component, it includes a navigation bar with a logo that links to the home page and a link to the home page, it uses the Link component from react-router-dom to enable client-side routing without refreshing the entire page, providing a smooth and seamless user experience in a single-page application. The Navbar component is typically displayed at the top of the application and allows users to easily navigate back to the home page from any other page within the application. The className attributes are used for styling purposes, allowing us to apply CSS styles to the navbar and its elements to enhance the visual appearance of the navigation bar.*/
+    return (
+        /*nav element with className "navbar" serves as the container for the navigation bar, it includes a Link component that wraps an h2 element with the logo text "🎬 Movie Explorer", which links to the home page ("/"), and another Link component that provides a link to the home page with the text "Home", this structure allows users to easily navigate back to the home page from any other page within the application, providing a consistent and accessible navigation experience across the application. The use of Link components ensures that navigation is handled client-side without refreshing the entire page, enhancing the user experience in a single-page application.*/
+        <nav className="navbar">
+            {/*Link component with className "logo" wraps an h2 element that displays the logo text "🎬 Movie Explorer", it links to the home page ("/"), allowing users to easily navigate back to the home page from any other page within the application, providing a consistent and accessible navigation experience across the application. The use of Link component ensures that navigation is handled client-side without refreshing the entire page, enhancing the user experience in a single-page application. The className "logo" can be used for styling purposes to differentiate the logo from other navigation links and enhance its visual prominence in the navigation bar.*/}
+            <Link className="logo" to="/">
+                <h2>🎬 Movie Explorer</h2>
+            </Link>
+            {/*Link component that provides a link to the home page with the text "Home", it allows users to easily navigate back to the home page from any other page within the application, providing a consistent and accessible navigation experience across the application. The use of Link component ensures that navigation is handled client-side without refreshing the entire page, enhancing the user experience in a single-page application. This link serves as an additional navigation option for users who may prefer a textual link over the logo for returning to the home page.*/}
+            <Link to="/">Home</Link>
+        </nav>
+    )
+}
+//exporting Navbar component so it can be used in App.jsx to display the navigation bar on every page, it allows us to have a consistent navigation experience across the application, enabling users to easily access the home page from any other page within the application, enhancing the overall user experience when exploring different movies based on their interests.
+export default Navbar;
